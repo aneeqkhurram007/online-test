@@ -1,7 +1,13 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Main from "./components/Main";
+
 function App() {
   return (
-    <div>
-      <h1 className="text-green-500 text-4xl font-bold">Hello React</h1>
+    <div className="flex items-center justify-between flex-col w-screen h-screen">
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }
