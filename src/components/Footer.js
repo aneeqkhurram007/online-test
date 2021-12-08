@@ -8,11 +8,20 @@ const Footer = () => {
     }, 1000);
   }, [time]);
   return (
-    <div className="flex justify-between w-full rounded-t-lg p-4 h-28 bg-yellow-500">
+    <div
+      className="flex justify-between w-full rounded-t-lg p-4
+    h-14 bg-yellow-500"
+    >
       <h1 className="font-bold text-lg">
-        Date: {new Date().toLocaleDateString()}
+        Date:{" "}
+        <span className="text-gray-800 font-semibold">
+          {new Date().toLocaleDateString()}
+        </span>
       </h1>
-      <h1 className="font-bold text-lg">Time: {time}</h1>
+
+      <h1 className="font-bold text-lg">
+        Time: <span className="text-gray-800 font-semibold">{time}</span>
+      </h1>
     </div>
   );
 };

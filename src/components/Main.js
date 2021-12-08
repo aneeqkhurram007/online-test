@@ -27,12 +27,7 @@ const Main = () => {
           </div>
           <div className="w-4/6 flex flex-col space-y-2">
             {Array(4)
-              .fill(
-                <TestButton
-                  text={`Take Maths quiz`}
-                  url={`https://google.com`}
-                />
-              )
+              .fill(<TestButton text={`Take Maths quiz`} url={`/test-page`} />)
               .map((i) => i)}
           </div>
         </form>
